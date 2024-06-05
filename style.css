@@ -1,3 +1,186 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 15rem 1fr;
+  height: 100vh;
+}
+
+div {
+  border: 1px solid red;
+}
+
+.sidebar {
+  grid-column: 1 / 2;
+  display: grid;
+  grid-template-rows: 5rem 1fr;
+}
+
+.logogrid {
+  grid-row: 1 / 2;
+  display: grid;
+  grid-template-columns: 5rem 1fr;
+}
+
+.logo {
+  grid-column: 1 / 2;
+}
+
+.logotext {
+  grid-column: 2 / 3;
+}
+
+.nav {
+  grid-row: 2 / 3;
+}
+
+.nav ul {
+  list-style: none;
+}
+
+.main {
+  grid-column: 2 / 3;
+  display: grid;
+  grid-template-rows: 10rem 1fr;
+}
+
+.header {
+  grid-row: 1 / 2;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.headtop {
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 5rem 1fr 5rem 5rem 15rem;
+}
+
+.searchicon {
+  grid-column: 1 / 2;
+}
+
+.searchbar {
+  grid-column: 2 / 3;
+}
+
+.bell {
+  grid-column: 3 / 4;
+}
+
+.avatarsmall {
+  grid-column: 4 / 5;
+}
+
+.username {
+  grid-column: 5 / 6;
+}
+
+.headbottom {
+  display: grid;
+  grid-template-columns: 5rem 1.5fr 1fr;
+  align-items: center;
+}
+
+.avatarlarge {
+  justify-self: center;
+}
+
+.greeting {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.buttons {
+  justify-self: center;
+}
+
+button {
+    border: none;
+    border-radius: 15px;
+    padding: 8px 16px;
+    background: hsl(202, 79%, 54%);
+    color: white;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 20rem;
+}
+
+.projects {
+  display: grid;
+  grid-template-rows: 3rem 1fr;
+}
+
+.projects > p {
+  align-self: end;
+  padding: 0 1rem;
+}
+
+.cards {
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.card {
+  display: grid;
+  grid-template-rows: 1fr 2fr 1fr;
+  border-left: 3px solid gold;
+  border-radius: 8px;
+  box-shadow: 5px 5px 5px hsl(0 0 50%);
+  padding: 1rem;
+}
+
+.icons {
+  display: grid;
+  grid-template-columns: 1fr 4rem 4rem 4rem;
+}
+
+.fave {
+  grid-column: 2 / 3;
+}
+
+.watch {
+  grid-column: 3 / 4;
+}
+
+.share {
+  grid-column: 4 / 5;
+}
+
+.feed {
+  display: grid;
+  grid-template-rows: 3rem 1fr 4rem 1fr;
+  padding: 1rem;
+}
+
+.feedlabel{
+  align-self: end;
+  padding: 1rem 0;
+}
+
+.announcements {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 1rem;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.trending {
+  display: grid;
+  grid-template-columns: 4rem 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  align-items: center;
+  gap: 1rem;
+  border-radius: 8px;
+  padding: 1rem;
 }
